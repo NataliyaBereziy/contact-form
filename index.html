@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social polling</title>
+</head>
+<body>
+    <h1>Social polling</h1>
+    <form method="POST" action="https://formspree.io/natalyberezy@gmail.com">
+        <label>Name:
+            <input type="text" name="respondent-name" placeholder="Your name">
+        </label>
+        <br>
+        <label>Email:
+            <input type="email" name="respondent-email"
+                placeholder="Your email">
+        </label>
+        <br>
+        <label>Your tel:
+            <input type="tel" name="tel"
+                placeholder="Your tel">
+        </label>
+        <br>
+        <label>Gender:</label>
+        <label>
+            <input type="radio" name="respondent-gender"
+                checked>
+            Male
+        </label>
+        <label>
+            <input type="radio" name="respondent-gender">
+            Female
+        </label>
+        <br>
+        <label>Your date of birth:
+            <input type="text" name="date-of-birth"
+            placeholder="dd/mm/yyyy"
+            required>
+        </label>
+        <br>
+        <label>Which brand of cosmetics do you usually use?
+            <select name="simple">
+                <option>Loreal</option>
+                <option>Faberlik</option>
+                <option selected>Bourjois</option>
+                <option>D&G</option>
+                <option>Oriflame</option>
+                <option>none</option>
+            </select>
+        </label>
+        <label>Your answer:
+            <textarea cols="30" rows="1"></textarea>
+        </label>
+        <br>
+        <label>Did you experiment with cosmetics?</label>
+        <label>
+            <input type="radio" name="experiment-with-cosmetics">
+            Yes
+        </label>
+        <label>
+            <input type="radio" name="experiment-with-cosmetics">
+            No
+        </label>
+        <br>
+        <label>What kind of body cosmetics do you use?
+            <input type="text" name="What-kind-of-body-cosmetics-do-you-use?">
+        </label>
+        <br>
+        <label>What fatness is your skin?
+            <input type="text" name="typ-of-skeen" list="my-suggestion">
+            <datalist id="my-suggestion">
+                <option>dry</option>
+                <option>combined</option>
+                <option>greasy</option>
+            </datalist>
+        </label>
+        <br>
+        <label for="how-often-use-cosmetics-input">How often do you use decorative cosmetics?</label>
+        <input type="text" id="how-often-use-cosmetics-input" name="how-often-use-cosmetics-input" list="how-often-use-cosmetics">
+        <datalist id="how-often-use-cosmetics">
+            <select name="how-often-use-cosmetics">
+                <option>often</option>
+                <option>not often</option>
+                <option>I'm not using at all</option>
+                <option>sometimes</option>
+            </select>
+        </datalist>
+        
+        <br>
+        <label>When do you use cosmetics?</label>
+        <label>
+            <input type="checkbox" name="when-use-cosmetics">
+            In the morning
+        </label>
+        <label>
+            <input type="checkbox" name="when-use-cosmetics">
+            In the evening
+        </label>
+        <label>
+            <input type="checkbox" name="when-use-cosmetics">
+            During the day
+        </label>
+        <br>
+        <label>How much do you usually spand on cosmetic per month?
+            <input type="number" name="money" min="50" max="1000" step="1">
+        </label>
+        <br>
+        <label>Do you want to recive emails from us?</label>
+        <label>
+            <input type="checkbox" name="recive-email"
+                checked>
+            Yes
+        </label>
+        <label>
+            <input type="checkbox" name="recive-email">
+            No
+        </label>
+        <br>
+        <label>Comments and suggestions:<br>
+            <input type="text" name="Comments-and-suggestions">
+        </label>
+        <br>
+        <input type="reset">
+        <input type="submit" value="Send">
+    </form>
+    <br>
+    <br>
+    <br>
+    <a href="tables.html">Tables</a>
+</body>
+</html>
